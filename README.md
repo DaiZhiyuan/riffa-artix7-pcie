@@ -1,6 +1,6 @@
 # RIFFA Artix-7 PCIe Benchmark & MSI Validation
 
-A lightweight verification framework for evaluating PCIe throughput and MSI interrupt signaling on Xilinx Artix-7 FPGAs using the open-source **RIFFA 2.2.2** (Reusable Integration Framework for FPGA Accelerators) architecture.
+A lightweight verification framework for evaluating PCIe throughput and MSI interrupt signaling on Xilinx Artix-7 FPGAs using the open-source RIFFA (Reusable Integration Framework for FPGA Accelerators) architecture.
 
 ---
 
@@ -27,7 +27,7 @@ A lightweight verification framework for evaluating PCIe throughput and MSI inte
 ## Prerequisites
 
 * **Hardware:** Xilinx Artix-7 FPGA development board (e.g., AC701) configured with the RIFFA 2.2.2 PCIe endpoint bitstream.
-* **OS:** Linux kernel (v4.x - v6.x tested).
+* **OS:** Linux kernel (6.8.0 tested).
 * **Dependencies:** Build essentials, kernel headers matching the running kernel (`linux-headers-$(uname -r)`).
 
 ---
@@ -112,7 +112,6 @@ Typical performance metrics observed on PCIe Gen2 x4 configurations:
 
 * **Peak Read (C2H) Bandwidth:** $\approx 1.5 \text{ GB/s}$ (approaching theoretical line rate limit).
 * **Peak Write (H2C) Bandwidth:** $\approx 1.4 \text{ GB/s}$.
-* **Interrupt Latency:** Sub-microsecond MSI dispatch latency under dedicated CPU affinity pinning.
 
 ---
 
